@@ -22,6 +22,10 @@ PRODUCT_PACKAGES += \
 # (for devices that check this)
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     net.tethering.noprovisioning=true
+    
+# Disable mobile data by default
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.com.android.mobiledata=true
 
     
 # CarrierSettings, replace CarrierConfig
@@ -41,7 +45,7 @@ PRODUCT_PACKAGES += \
 
 # Carriers Databases
 PRODUCT_PACKAGES += \
-    1and1_de.pb \
+   1and1_de.pb \
     2degrees_nz.pb \
     a1_at.pb \
     a1_si.pb \
@@ -293,7 +297,47 @@ PRODUCT_PACKAGES += \
     yettel_hu.pb \
     yoigo_es.pb \
     zain_kw.pb \
-    zeop_re.pb
+    zeop_re.pb \
+    4ka_sk.pb \
+    a1_bg.pb \
+    a1_mk.pb \
+    appalachian_us.pb \
+    att_mx.pb \
+    attbootstrap_us.pb \
+    bob_at.pb \
+    cablemovil_es.pb \
+    dish5gsa_us.pb \
+    finetwork_es.pb \
+    free_re.pb \
+    guuk_es.pb \
+    help_at.pb \
+    inland_us.pb \
+    lebara_es.pb \
+    lebara_fr.pb \
+    lifecell_ua.pb \
+    llamaya_es.pb \
+    lyca_es.pb \
+    monacotelecom_mc.pb \
+    movistar_mx.pb \
+    nova_is.pb \
+    r_es.pb \
+    racc_es.pb \
+    salt_li.pb \
+    smart_ph.pb \
+    spusu_at.pb \
+    sweno_es.pb \
+    telco_re.pb \
+    telecable2_es.pb \
+    telekom_mk.pb \
+    truphone_us.pb \
+    truphone_zz.pb \
+    turkcell_tr.pb \
+    turktelekom_tr.pb \
+    unionwireless_us.pb \
+    vinaphone_vn.pb \
+    virgintelco_es.pb \
+    yesss_at.pb \
+    yettel_bg.pb 
 
 # Other countries
 PRODUCT_PACKAGES += \
