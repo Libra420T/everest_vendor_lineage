@@ -2,13 +2,11 @@
 EVEREST_BUILD_TYPE ?= UNOFFICIAL
 
 # Only include Updater for official  build
-ifeq ($(filter-out OFFICIAL,$(EVEREST_BUILD_TYPE)),)
     PRODUCT_PACKAGES += \
         Updater
 
 PRODUCT_COPY_FILES += \
     vendor/lineage/prebuilt/common/etc/init/init.lineage-updater.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.lineage-updater.rc
-endif
 
 # OFFICIAL DEVICES CHECK
 OFFICIAL_MAINTAINERS := $(shell cat everest-maintainers/everest.maintainers)
