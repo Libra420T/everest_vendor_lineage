@@ -45,6 +45,9 @@ ifeq ($(TARGET_DEFAULT_PIXEL_LAUNCHER), true)
 PRODUCT_SYSTEM_PROPERTIES += \
     persist.sys.default_launcher=1 \
     persist.sys.quickswitch_pixel_shipped=1
+# Transparent recents in pixel launcher
+PRODUCT_PACKAGES += \
+    PixelLauncherOverlayBlur
 else
 # Launcher3
 PRODUCT_SYSTEM_PROPERTIES += \
@@ -276,13 +279,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     DocumentsUIOverlay \
     NetworkStackOverlay
-
-# Transparent recents in pixel launcher
-TARGET_USES_BLUR_RECENT ?= true
-ifeq ($(TARGET_USES_BLUR_RECENT), true)
-PRODUCT_PACKAGES += \
-    PixelLauncherOverlayBlur
-endif
 
 # GameSpace
 PRODUCT_PACKAGES += \
