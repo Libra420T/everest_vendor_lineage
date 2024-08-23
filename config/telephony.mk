@@ -304,5 +304,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/lineage/CarrierSettings/overlay
     
-include vendor/everest/config/pixel_telephony.mk
+include vendor/lineage/config/pixel_telephony.mk
 
