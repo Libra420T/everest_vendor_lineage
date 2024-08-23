@@ -351,4 +351,6 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Include Carrier Runtime Configuration
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/lineage/CarrierSettings/overlay
+    
+include vendor/lineage/config/pixel_telephony.mk
 
