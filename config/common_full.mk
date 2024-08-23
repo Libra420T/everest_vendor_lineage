@@ -7,11 +7,6 @@ PRODUCT_SIZE := full
 PRODUCT_PACKAGES += \
     Profiles
 
-ifneq ($(PRODUCT_NO_CAMERA),true)
-PRODUCT_PACKAGES += \
-    Aperture
-endif
-
 # Extra cmdline tools
 PRODUCT_PACKAGES += \
     unrar \
