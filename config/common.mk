@@ -329,9 +329,6 @@ include vendor/lineage/config/version.mk
 # Bootanimation
 include vendor/lineage/config/bootanimation.mk
 
-# Inherit from rro_overlays config
-$(call inherit-product, vendor/lineage/config/rro_overlays.mk)
-
 # EverestOS
 $(call inherit-product, vendor/lineage/config/everest.mk)
 $(call inherit-product, vendor/extra/product.mk)
