@@ -16,6 +16,7 @@ PRODUCT_PACKAGES += \
 
 # Telephony packages
 PRODUCT_PACKAGES += \
+    messaging \
     Stk
 
 # Tethering - allow without requiring a provisioning app
@@ -350,6 +351,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Include Carrier Runtime Configuration
 PRODUCT_PACKAGE_OVERLAYS += \
     vendor/lineage/CarrierSettings/overlay
-    
-include vendor/lineage/config/pixel_telephony.mk
 
